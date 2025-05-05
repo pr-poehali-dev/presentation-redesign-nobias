@@ -43,143 +43,115 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-white">
-      <header className="py-4 border-b border-indigo-100">
+    <div className="min-h-screen flex flex-col bg-black text-white">
+      <header className="py-6 border-b border-neutral-800">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold text-indigo-900">Биотех Презентация</h1>
+          <h1 className="text-xl uppercase tracking-wider font-light">NOBIAS TECHNOLOGIES</h1>
         </div>
       </header>
 
-      <main className="flex-1 flex flex-col items-center justify-center p-4">
-        <div className="relative w-full max-w-4xl mx-auto">
+      <main className="flex-1 flex flex-col items-center justify-center p-6">
+        <div className="relative w-full max-w-5xl mx-auto">
           {/* Слайд 1 - Дорожная карта */}
           <SlideWrapper active={currentSlide === 0}>
-            <Card className="overflow-hidden bg-white shadow-xl rounded-xl">
-              <div className="bg-indigo-900 text-white py-6 px-8">
-                <h2 className="text-4xl font-bold tracking-wide">ДОРОЖНАЯ КАРТА</h2>
-              </div>
-              <div className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <AnimatedItem delay={300}>
-                    <div className="flex flex-col">
-                      <div className="bg-indigo-100 rounded-full w-24 h-24 mb-4 flex items-center justify-center mx-auto">
-                        <div className="bg-indigo-200 rounded-full w-16 h-16 flex items-center justify-center">
-                          <div className="bg-indigo-300 rounded-full w-10 h-10"></div>
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <h3 className="text-lg font-bold text-indigo-900">Масштабирование производства</h3>
-                        <p className="text-sm text-gray-600 mb-2">Доработка линейки реагентов</p>
-                        <div className="bg-indigo-400 text-white py-2 rounded-md">2025</div>
-                      </div>
-                    </div>
-                  </AnimatedItem>
-                  
-                  <AnimatedItem delay={400}>
-                    <div className="flex flex-col relative">
-                      <div className="bg-indigo-100 rounded-full w-24 h-24 mb-4 flex items-center justify-center mx-auto">
-                        <div className="bg-indigo-200 rounded-full w-16 h-16 flex items-center justify-center">
-                          <div className="bg-indigo-300 rounded-full w-10 h-10"></div>
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <h3 className="text-lg font-bold text-indigo-900">Глобализация</h3>
-                        <p className="text-sm text-gray-600 mb-2">Создание научных хабов в странах БРИКС</p>
-                        <div className="bg-indigo-500 text-white py-2 rounded-md">2027</div>
-                      </div>
-                      <div className="absolute -bottom-12 left-0 right-0">
-                        <div className="bg-indigo-800 text-white py-2 rounded-md">2026</div>
-                        <h3 className="text-lg font-bold text-indigo-900 mt-2">Расширение продуктовой линейки</h3>
-                        <p className="text-sm text-gray-600">Разработка и патентование рецептур нутрицевтиков</p>
-                      </div>
-                    </div>
-                  </AnimatedItem>
-                  
-                  <AnimatedItem delay={500}>
-                    <div className="flex flex-col relative">
-                      <div className="bg-indigo-100 rounded-full w-24 h-24 mb-4 flex items-center justify-center mx-auto">
-                        <div className="bg-indigo-200 rounded-full w-16 h-16 flex items-center justify-center">
-                          <div className="bg-indigo-300 rounded-full w-10 h-10"></div>
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <h3 className="text-lg font-bold text-indigo-900">Укрепление позиций на мировой арене</h3>
-                        <p className="text-sm text-gray-600 mb-2">&nbsp;</p>
-                        <div className="bg-indigo-400 text-white py-2 rounded-md">2029</div>
-                      </div>
-                      <div className="absolute -bottom-12 left-0 right-0">
-                        <div className="bg-indigo-800 text-white py-2 rounded-md">2028</div>
-                        <h3 className="text-lg font-bold text-indigo-900 mt-2">Расширение сети дистрибуции</h3>
-                        <p className="text-sm text-gray-600">Выход на рынки: США, Канада</p>
-                      </div>
-                    </div>
-                  </AnimatedItem>
-                </div>
+            <Card className="overflow-hidden bg-black border border-neutral-800 rounded-none shadow-lg p-8 md:p-16">
+              <AnimatedItem delay={100}>
+                <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-16 uppercase">
+                  Дорожная карта
+                </h2>
+              </AnimatedItem>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-6 relative">
+                <div className="md:col-span-3 absolute left-0 right-0 top-1/3 h-px bg-neutral-800"></div>
+                
+                <AnimatedItem delay={300}>
+                  <div className="flex flex-col relative pb-16">
+                    <div className="rounded-full w-3 h-3 border border-white mb-6 mx-auto"></div>
+                    <span className="text-sm text-neutral-400 uppercase tracking-widest mb-2">2025</span>
+                    <h3 className="text-xl font-light uppercase tracking-wide mb-2">Масштабирование производства</h3>
+                    <p className="text-sm text-neutral-400">Доработка линейки реагентов</p>
+                  </div>
+                </AnimatedItem>
+                
+                <AnimatedItem delay={400}>
+                  <div className="flex flex-col relative pb-16">
+                    <div className="rounded-full w-3 h-3 border border-white mb-6 mx-auto"></div>
+                    <span className="text-sm text-neutral-400 uppercase tracking-widest mb-2">2026-2027</span>
+                    <h3 className="text-xl font-light uppercase tracking-wide mb-2">Расширение и глобализация</h3>
+                    <p className="text-sm text-neutral-400">Разработка нутрицевтиков. Создание научных хабов в странах БРИКС</p>
+                  </div>
+                </AnimatedItem>
+                
+                <AnimatedItem delay={500}>
+                  <div className="flex flex-col relative pb-16">
+                    <div className="rounded-full w-3 h-3 border border-white mb-6 mx-auto"></div>
+                    <span className="text-sm text-neutral-400 uppercase tracking-widest mb-2">2028-2029</span>
+                    <h3 className="text-xl font-light uppercase tracking-wide mb-2">Экспансия</h3>
+                    <p className="text-sm text-neutral-400">Расширение сети дистрибуции (США, Канада). Укрепление позиций на мировой арене</p>
+                  </div>
+                </AnimatedItem>
               </div>
             </Card>
           </SlideWrapper>
 
           {/* Слайд 2 - Гипотеза подтверждена */}
           <SlideWrapper active={currentSlide === 1}>
-            <Card className="overflow-hidden bg-white shadow-xl rounded-xl">
-              <div className="p-8">
+            <Card className="overflow-hidden bg-black border border-neutral-800 rounded-none shadow-lg p-8 md:p-16">
+              <AnimatedItem delay={100}>
+                <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-16 uppercase">
+                  Гипотеза подтверждена:<br />
+                  <span className="text-neutral-500">рынок готов платить</span>
+                </h2>
+              </AnimatedItem>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <AnimatedItem delay={300}>
-                  <h2 className="text-4xl font-bold text-indigo-900 mb-8">
-                    ГИПОТЕЗА ПОДТВЕРЖДЕНА:<br />
-                    РЫНОК ГОТОВ ПЛАТИТЬ
-                  </h2>
+                  <div className="relative h-64 md:h-full flex items-center justify-center">
+                    <div className="relative">
+                      <div className="border border-neutral-700 rounded-full h-40 w-40 absolute" style={{ left: '-40px', top: '-20px' }}></div>
+                      <div className="border border-neutral-700 rounded-full h-24 w-24 absolute" style={{ left: '60px', top: '30px' }}></div>
+                      <div className="border border-neutral-700 rounded-full h-32 w-32 absolute" style={{ left: '10px', top: '50px' }}></div>
+                      <div className="border border-neutral-700 rounded-full h-16 w-16 absolute" style={{ left: '-20px', top: '60px' }}></div>
+                      <div className="border border-neutral-700 rounded-full h-20 w-20 absolute" style={{ left: '70px', top: '-10px' }}></div>
+                    </div>
+                  </div>
                 </AnimatedItem>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
                   <AnimatedItem delay={400}>
-                    <div className="flex items-center justify-center">
-                      <div className="relative">
-                        <div className="bg-indigo-100 rounded-full w-32 h-32 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                        <div className="bg-indigo-100 rounded-full w-28 h-28 absolute" style={{ top: "-50px", left: "20px" }}></div>
-                        <div className="bg-indigo-100 rounded-full w-28 h-28 absolute" style={{ top: "30px", left: "-60px" }}></div>
-                        <div className="bg-indigo-100 rounded-full w-28 h-28 absolute" style={{ top: "100px", left: "0px" }}></div>
-                        <div className="bg-indigo-100 rounded-full w-28 h-28 absolute" style={{ top: "30px", left: "100px" }}></div>
-                        <div className="relative h-64 w-64"></div>
-                      </div>
-                    </div>
+                    <p className="text-lg text-neutral-300 mb-8">
+                      Мы глубоко понимаем свой продукт, рынок и целевую аудиторию.
+                    </p>
                   </AnimatedItem>
                   
-                  <div>
+                  <div className="space-y-8">
                     <AnimatedItem delay={500}>
-                      <p className="text-lg text-indigo-900 mb-6">
-                        Мы глубоко понимаем свой продукт, рынок и целевую аудиторию.
-                      </p>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-0.5 bg-white mt-3 flex-shrink-0"></div>
+                        <p className="text-neutral-200">подтверждённый product-market fit.</p>
+                      </div>
                     </AnimatedItem>
                     
-                    <ul className="space-y-6">
-                      <AnimatedItem delay={600}>
-                        <div className="flex items-center">
-                          <div className="bg-indigo-100 rounded-full w-8 h-8 mr-4 flex-shrink-0"></div>
-                          <p className="text-indigo-800">подтверждённый product-market fit.</p>
-                        </div>
-                      </AnimatedItem>
-                      
-                      <AnimatedItem delay={700}>
-                        <div className="flex items-center">
-                          <div className="bg-indigo-100 rounded-full w-8 h-8 mr-4 flex-shrink-0"></div>
-                          <p className="text-indigo-800">soft-коммитменты от лабораторий на закупку реагентов</p>
-                        </div>
-                      </AnimatedItem>
-                      
-                      <AnimatedItem delay={800}>
-                        <div className="flex items-center">
-                          <div className="bg-indigo-100 rounded-full w-8 h-8 mr-4 flex-shrink-0"></div>
-                          <p className="text-indigo-800">предзаказ на разработку уникального нутрицевтика для онкологии, стоимость одной рецептуры 20 млн рублей.</p>
-                        </div>
-                      </AnimatedItem>
-                    </ul>
+                    <AnimatedItem delay={600}>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-0.5 bg-white mt-3 flex-shrink-0"></div>
+                        <p className="text-neutral-200">soft-коммитменты от лабораторий на закупку реагентов</p>
+                      </div>
+                    </AnimatedItem>
                     
-                    <AnimatedItem delay={900}>
-                      <p className="mt-6 text-indigo-900">
-                        Наш научный фокус — создание передовых нутрицевтиков в сфере клинического и функционального питания, не имеющих аналогов в мире.
-                      </p>
+                    <AnimatedItem delay={700}>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-0.5 bg-white mt-3 flex-shrink-0"></div>
+                        <p className="text-neutral-200">предзаказ на разработку уникального нутрицевтика для онкологии, стоимость одной рецептуры 20 млн рублей.</p>
+                      </div>
                     </AnimatedItem>
                   </div>
+                  
+                  <AnimatedItem delay={800}>
+                    <p className="mt-10 text-neutral-400 text-sm italic">
+                      Наш научный фокус — создание передовых нутрицевтиков в сфере клинического и функционального питания, не имеющих аналогов в мире.
+                    </p>
+                  </AnimatedItem>
                 </div>
               </div>
             </Card>
@@ -187,94 +159,93 @@ const Index = () => {
 
           {/* Слайд 3 - Рынок микробиомных исследований */}
           <SlideWrapper active={currentSlide === 2}>
-            <Card className="overflow-hidden bg-white shadow-xl rounded-xl">
-              <div className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                  <div className="relative">
-                    <AnimatedItem delay={200}>
-                      <h2 className="text-4xl font-bold text-indigo-900 mb-10">
-                        РЫНОК МИКРОБИОМНЫХ<br />ИССЛЕДОВАНИЙ
-                      </h2>
-                    </AnimatedItem>
-                    
-                    <div className="relative">
-                      <div className="bg-pink-100 bg-opacity-60 rounded-full w-64 h-64 absolute transform -translate-x-1/3 -translate-y-1/3 top-1/2 left-1/2"></div>
+            <Card className="overflow-hidden bg-black border border-neutral-800 rounded-none shadow-lg p-8 md:p-16">
+              <AnimatedItem delay={100}>
+                <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-16 uppercase">
+                  Рынок микробиомных<br />
+                  <span className="text-neutral-500">исследований</span>
+                </h2>
+              </AnimatedItem>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div className="relative">
+                  <AnimatedItem delay={300}>
+                    <div className="relative h-72 md:h-80">
+                      <div className="border border-neutral-300 rounded-full h-64 w-64 absolute opacity-20" 
+                           style={{ left: '20px', top: '10px' }}></div>
+                      <div className="border border-neutral-400 rounded-full h-32 w-32 absolute opacity-40" 
+                           style={{ right: '20px', top: '40px' }}></div>
                       
-                      <div className="bg-pink-100 rounded-full w-40 h-40 absolute top-1/2 right-0 flex items-center justify-center text-center">
-                        <div>
-                          <p className="text-indigo-900 font-bold">РФ - 45 млн $</p>
-                        </div>
+                      <div className="absolute top-8 left-8 z-10">
+                        <p className="text-2xl font-light">
+                          <span className="block text-neutral-500 text-sm mb-1">Глобальный</span>
+                          4,5 млрд $
+                        </p>
                       </div>
                       
-                      <div className="relative z-10 bg-transparent h-80 p-4">
-                        <ul className="space-y-2 ml-4">
-                          <AnimatedItem delay={400}>
-                            <li className="text-indigo-900 font-bold">
-                              Глобальный - 4,5 млрд $
-                            </li>
-                          </AnimatedItem>
-                          <AnimatedItem delay={500}>
-                            <li className="text-indigo-900 font-bold">
-                              Реагенты - 1,5 млрд $
-                            </li>
-                          </AnimatedItem>
-                        </ul>
+                      <div className="absolute right-12 top-1/2 transform -translate-y-1/2 z-10">
+                        <p className="text-xl font-light">
+                          <span className="block text-neutral-500 text-sm mb-1">РФ</span>
+                          45 млн $
+                        </p>
                       </div>
                       
-                      <AnimatedItem delay={700}>
-                        <div className="absolute bottom-0 left-0 text-sm text-indigo-900 font-bold">
-                          2031г
-                        </div>
-                      </AnimatedItem>
+                      <div className="absolute bottom-12 left-8 z-10">
+                        <p className="text-xl font-light">
+                          <span className="block text-neutral-500 text-sm mb-1">Реагенты</span>
+                          1,5 млрд $
+                        </p>
+                      </div>
                       
-                      <AnimatedItem delay={700}>
-                        <div className="absolute bottom-0 right-0 text-sm text-indigo-900 font-bold">
-                          CAGR- 25%
-                        </div>
-                      </AnimatedItem>
+                      <div className="absolute bottom-2 left-0 text-xs text-neutral-500">
+                        2031г
+                      </div>
+                      
+                      <div className="absolute bottom-2 right-0 text-xs text-neutral-500">
+                        CAGR — 25%
+                      </div>
                     </div>
-                  </div>
+                  </AnimatedItem>
+                </div>
+                
+                <div className="flex flex-col justify-center">
+                  <AnimatedItem delay={500}>
+                    <div className="mb-12 border-l-2 border-white pl-8">
+                      <p className="text-xl text-neutral-200">
+                        Цель — занять 10% сегмента рынка реагентов в течение 5 лет, что эквивалентно выручке порядка $150 млн.
+                      </p>
+                    </div>
+                  </AnimatedItem>
                   
-                  <div className="flex flex-col justify-center">
-                    <AnimatedItem delay={600}>
-                      <div className="mb-8">
-                        <p className="text-lg text-indigo-900">
-                          Цель - занять 10% сегмента рынка реагентов в течение 5 лет, что эквивалентно выручке порядка $150 млн.
-                        </p>
-                      </div>
-                    </AnimatedItem>
-                    
-                    <AnimatedItem delay={700}>
-                      <div>
-                        <p className="text-lg text-indigo-900">
-                          Прогнозируемая капитализация RND компании - 500+ млн $ 2031 год
-                        </p>
-                      </div>
-                    </AnimatedItem>
-                  </div>
+                  <AnimatedItem delay={600}>
+                    <div className="border-l-2 border-white pl-8">
+                      <p className="text-xl text-neutral-200">
+                        Прогнозируемая капитализация RND компании — 500+ млн $ 2031 год
+                      </p>
+                    </div>
+                  </AnimatedItem>
                 </div>
               </div>
             </Card>
           </SlideWrapper>
           
           {/* Навигация */}
-          <div className="mt-10 flex justify-center items-center gap-4">
+          <div className="mt-10 flex justify-between items-center">
             <Button 
               variant="outline" 
-              size="icon" 
               onClick={handlePrev}
-              className="rounded-full bg-white shadow-md hover:bg-indigo-100"
+              className="border-neutral-700 hover:bg-neutral-900 rounded-none uppercase text-xs tracking-widest px-8 py-6"
             >
-              <ChevronLeft className="h-4 w-4" />
+              <ChevronLeft className="h-4 w-4 mr-2" /> Назад
             </Button>
             
-            <div className="flex gap-2">
+            <div className="flex gap-4">
               {[0, 1, 2].map((index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full ${
-                    currentSlide === index ? "bg-indigo-900" : "bg-indigo-200"
+                  className={`w-2 h-2 rounded-full ${
+                    currentSlide === index ? "bg-white" : "bg-neutral-700"
                   }`}
                 />
               ))}
@@ -282,11 +253,10 @@ const Index = () => {
             
             <Button 
               variant="outline" 
-              size="icon" 
               onClick={handleNext}
-              className="rounded-full bg-white shadow-md hover:bg-indigo-100"
+              className="border-neutral-700 hover:bg-neutral-900 rounded-none uppercase text-xs tracking-widest px-8 py-6"
             >
-              <ChevronRight className="h-4 w-4" />
+              Далее <ChevronRight className="h-4 w-4 ml-2" />
             </Button>
           </div>
         </div>
